@@ -299,7 +299,7 @@ function Settings() {
           <hr className="my-2" />
           <Button variant={"link"}
           >
-          <a href='https://github.com/devusimple/money-tracking.git' target='_blink'>
+          <a href='https://github.com/devusimple/money-tracking.git' target='_blink' className='flex items-center justify-center'>
             <LucideGithub />
             সোর্সকোড লিঙ্ক
               </a>
