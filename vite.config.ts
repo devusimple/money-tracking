@@ -9,8 +9,11 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    
+    // PWA Configuration 
+        
     VitePWA({
-      registerType: "prompt",
+      registerType: "autoUpdate",
       injectRegister: false,
 
       pwaAssets: {
@@ -21,7 +24,7 @@ export default defineConfig({
       manifest: {
         name: "MoneyTracker",
         short_name: "MoneyTracker",
-        description: "MoneyTracker",
+        description: "A simple minimalist lightweight and modern money tracking app built-in top of react and shadcn.",
         theme_color: "#ffffff",
       },
 
@@ -38,6 +41,9 @@ export default defineConfig({
         type: "module",
       },
     }),
+    
+    
+    
   ],
   resolve: {
     alias: {
