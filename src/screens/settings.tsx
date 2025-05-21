@@ -27,9 +27,9 @@ import { useState } from "react";
 import { toast } from "sonner";
 import download from "downloadjs";
 
+
 function Settings() {
   const [loading, setLoading] = useState(false);
-
   const exportData = async () => {
     setLoading(true);
     try {
@@ -177,7 +177,7 @@ function Settings() {
         <CardFooter className="flex flex-col justify-start items-start">
           <div className="w-full">
             <p className="font-bold text-left">
-              ডেভেলপারের সঙ্গে যোগাযোগ করতে চাও?
+              ডেভেলপারের সঙ্গে যোগাযোগ করতে চান?
             </p>
           </div>
           <div className="flex items-center justify-center gap-2 w-full mt-3">
@@ -297,9 +297,12 @@ function Settings() {
             গিয়ে জানানোর অনুরোধ করা গেলো।
           </p>
           <hr className="my-2" />
-          <Button variant={"link"}>
+          <Button variant={"link"}
+          >
+          <a href='https://github.com/devusimple/money-tracking.git' target='_blink'>
             <LucideGithub />
             সোর্সকোড লিঙ্ক
+              </a>
           </Button>
         </CardFooter>
       </Card>
