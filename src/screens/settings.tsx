@@ -167,7 +167,7 @@ function Settings() {
           </p>
           <hr className="my-3" />
           <span className="w-full flex items-center justify-center">
-            <Button>
+            <Button onClick={()=> download("/public/Mehedi_Hasan_Resume.docx")}>
               Download my full Resume
               <LucideFileDown />
             </Button>
@@ -186,42 +186,54 @@ function Settings() {
               size={"icon"}
               className="border rounded-full"
             >
+              <a href="https://www.facebook.com/huzzat77" target="_blink">
               <LucideFacebook />
+              </a>
             </Button>
             <Button
               variant={"link"}
               size={"icon"}
               className="border rounded-full"
-            >
+            >             
+            <a href="https://github.com/devusimple" target="_blink">
               <LucideGithub />
+              </a>
             </Button>
             <Button
               variant={"link"}
               size={"icon"}
               className="border rounded-full"
             >
+           <a href="https/x.com/@islamhuzzat" target="_blink">
               <LucideTwitter />
+              </a>
             </Button>
             <Button
               variant={"link"}
               size={"icon"}
               className="border rounded-full"
             >
+            <a href="" target="_blink">
               <LucideLinkedin />
+              </a>
             </Button>
             <Button
               variant={"link"}
               size={"icon"}
               className="border rounded-full"
             >
+             <a href="" target="_blink">
               <LucideUser />
+                </a>
             </Button>
             <Button
               variant={"link"}
               size={"icon"}
               className="border rounded-full"
             >
+              <a href='https://wa.me/8801310289950' target='_blink'>
               <LucidePhone />
+              </a>
             </Button>
           </div>
         </CardFooter>
