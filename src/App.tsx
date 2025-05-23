@@ -9,7 +9,7 @@ import AllSheetContainer from "./components/sheet";
 export default function App() {
   const size = window.screen.width;
 
-  if (size > 400)
+  if (size > 1400)
     return (
       <div className="grid place-content-center h-screen text-center">
         <LucideBadgeAlert className="mx-auto text-red-600" />
